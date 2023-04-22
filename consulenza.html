@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+
+
+<html>
+	<head> 
+		<title>
+			Consulenza
+		</title>
+		<link rel="icon" type="image/x-icon" href="images/icona-nera.png">
+		<link rel="stylesheet" href="style.css">
+	</head> 
+			
+	<body>
+		<div class="sidebar">
+			<div class="sidebar-logo">
+				<img src="images/icona.png" alt="icona" height="50px" align="middle" style="padding-right: 1px">
+				<div class="vertical-line"></div>
+				Ed. civica
+			</div>
+			<a href="home.html"> Home</a>
+			<a href="chi-siamo.html"> Chi siamo</a>
+			<a href="cosa-affrontiamo.html"> Cosa stiamo affrontando</a>
+			<a href="il-progetto.html"> Il nostro progetto</a>
+			<a href="conclusioni.html"> Conclusioni</a>
+			<a href="consulenza.html" style="color:white"> Richiedi una consulenza</a>
+		</div>
+		
+		
+		<main style="padding-top: 1px;">
+		<p style="padding-top:40px;"> 
+			Ti interessa acquistare il nostro prodotto? Complila questo modulo e presto riceverai la nostra risposta.
+		</p>
+		
+
+		<!-- Form -->
+		<form action="D_form.html" method="post">
+			<table class="formtable" align="center">
+				<tr class="formtable">
+					<td class="formtable">
+						<label>Nome</label>
+						<input type="text" id="name" name="name" placeholder="Mario" required>
+					</td>
+					<td class="formtable">
+						<label for="surname">Cognome</label>
+						<input type="text" id="surname" name="surname" placeholder="Rossi" required>
+					</td>
+				</tr>
+				<tr class="formtable">
+					<td class="formtable">
+						<label for="db"> Data di nascita </label>
+						<input type="date" name="d_born" id="db" required>
+					</td>
+					<td class="formtable">
+						<label>Città </label>
+						<input type="text" name="city" placeholder="Verona" id="ct" required>
+					</td>
+				</tr>
+				<tr class="formtable">
+					<td class="formtable">
+						<label for="cell"> Numero di telefono (facoltativo) </label>
+						<input type="tel" id="cell" name="tel" placeholder="1234567890" pattern="[0-9]{9}">
+					</td>
+					<td class="formtable">
+						<label for="email"> Email </label required>
+						<input type="email" placeholder="mario.rossi@gmail.com">
+					</td>
+				</tr>
+				<tr class="formtable">
+					<td colspan="2" class="formtable">
+						<p style="padding:0; text-align:left; font-size:17px"> In che lingua vuoi configurare il tuo micro:bit?</p>
+						<input type="radio" name="lingua" value="ita" id="it">
+						<label for="c">Italiano </label> 
+						<br>
+						<input type="radio" name="lingua" value="eng" id="eg">
+						<label for="b">English </label>
+					</td>
+				</tr>
+				<tr class="formtable">
+					<td colspan="2" class="formtable">
+						<input type="reset" value="Cancella">
+						<input type="submit" value="Invia"> 
+					</td>
+				</tr>
+			</table>
+		</form>
+		</main>
+
+		<!-- Footer -->
+		<footer>
+			<p class="footer">
+				Lavoro svolto da Altobel Nicola, Bologna Giorgia, Lucchi Lucia<br>
+				Classe 4BSA<br>
+				Anno scolastico 2022/2023<br>
+				Tema educazione civica: le pari opportunità nel lavoro<br>
+			</p>
+		</footer>
+	</body>
+</html>

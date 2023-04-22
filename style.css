@@ -1,0 +1,181 @@
+:root{
+	--bodycolor: #863286;
+	--mainbgcolor: #c40cc4;
+	--sidebarcolor: #000411;
+	--sidebartextcolor: #9c9c9c;
+	--sidebarlogocolor: var(--bodycolor);
+	--tablebordercolor: #DDA0DD;
+	--footercolor: var(--bodycolor);	
+	--tdovercolor: #D897D8;
+	--textcolor: #F2F0EE;
+	--h1bgcolor: #F2F0EE;
+}
+
+
+.sidebar{
+	position: fixed;
+	height: 100%;
+	width: 200px;
+	background-color: var(--sidebarcolor);
+	top: 0;
+	left: 0;   
+}
+
+.sidebar a{
+	padding: 8px 8px 8px 32px;
+	text-decoration: none;
+	font-size: 25px;
+	color: var(--sidebartextcolor);
+	display: block;
+	margin-bottom: 10px;
+}
+
+
+a{
+	color:	blue;
+}
+
+.sidebar a:hover{
+	color: white;
+}
+
+.sidebar-logo{
+	padding: 10px 0 10px 10px;
+	width: auto;
+	min-height: 50px;
+	margin-bottom: 50px;
+	font-family:Monaco;
+	color: var(--textcolor);
+	font-size:25px;
+	background-color: var(--sidebarlogocolor);
+	display: flex;
+	align-items: center;
+}
+
+.vertical-line{
+	width: 1px;
+	background-color: white;
+	height: 50px;
+	display: inline-block;
+	margin: 0 15px 0 5px;
+}
+
+
+body {
+	background-color: var(--bodycolor);
+	margin: 0 0 0 0;
+}
+
+main{
+	margin: 0;
+	padding: 0px 0 200px 200px;
+	background-color: var(--mainbgcolor);
+}
+
+h1 {
+  font-family: Monaco;
+  font-size: 70px;
+  background-color: var(--h1bgcolor);
+  text-align:center;
+  color: var(--mainbgcolor);
+  padding: 50px;
+  margin: 0px 0 60px 0;
+  
+}
+
+table, td, th{
+	text-align:center;
+	width: 50%;
+	border:2px solid;
+	border-collapse: collapse;
+	color: var(--textcolor);
+	border-color: var(--tablebordercolor);
+	
+}
+
+td,th{
+	font-family:Monaco;
+	font-size:20px;
+}
+
+td:hover:not(.formtable):not(.imgtable){
+	background-color: var(--tdovercolor);
+}
+
+p,li, h3{
+	font-family:Monaco;
+	color: var(--textcolor);
+	font-size:20px;
+	text-align:center;
+	padding: 0 100px;
+}
+
+footer{
+	background-color: var(--footercolor);
+	padding-top: 10px;
+	padding-bottom: 10px;
+	margin-right: 0;
+	padding-right: 10px;
+}
+
+footer p{
+	padding: 0 30px;
+}
+
+li {
+	margin-left: 30%;
+	text-align:left;
+}
+
+p.footer{
+	text-align: right;
+}
+
+figcaption{
+	color: var(--textcolor);
+	font-size: 20px;
+	font-family:Monaco;	
+}
+
+.formtable{
+	border-collapse: separate;
+	text-align: left;
+	border: 0;
+	height: 100px;
+	width: 500px;
+	font-size: 16px;
+	border-spacing: 15px;
+}
+
+.formtable label{
+	padding-left:7px;
+}
+
+input[type=text], [type=email], [type=tel], [type=date]{
+	width:250px;
+	height:32px;
+	border: 0;
+	border-radius: 10px;
+	padding-left: 10px;
+}
+
+input[type=submit]{
+	color:black;
+	background-color:#BCED09;
+	width: 49%;
+	border: 0;
+	height: 40px;
+	border-radius: 10px;
+}
+
+input[type=reset]{
+	background-color:#FF715B;
+	width: 49%;
+	border: 0;
+	height: 40px;
+	border-radius: 10px;
+}
+
+input[type=submit]:hover, [type=reset]:hover{
+	cursor: pointer;
+}
