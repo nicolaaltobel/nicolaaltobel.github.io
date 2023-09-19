@@ -1,181 +1,91 @@
 :root{
-	--bodycolor: #863286;
-	--mainbgcolor: #c40cc4;
-	--sidebarcolor: #000411;
-	--sidebartextcolor: #9c9c9c;
-	--sidebarlogocolor: var(--bodycolor);
-	--tablebordercolor: #DDA0DD;
-	--footercolor: var(--bodycolor);	
-	--tdovercolor: #D897D8;
-	--textcolor: #F2F0EE;
-	--h1bgcolor: #F2F0EE;
+    --mainBG: #f6f6f6;
+    --panelBG: #e2e2e2;
+    --mainRadius: 5px;
 }
 
-
-.sidebar{
-	position: fixed;
-	height: 100%;
-	width: 200px;
-	background-color: var(--sidebarcolor);
-	top: 0;
-	left: 0;   
-}
-
-.sidebar a{
-	padding: 8px 8px 8px 32px;
-	text-decoration: none;
-	font-size: 25px;
-	color: var(--sidebartextcolor);
-	display: block;
-	margin-bottom: 10px;
-}
-
-
-a{
-	color:	blue;
-}
-
-.sidebar a:hover{
-	color: white;
-}
-
-.sidebar-logo{
-	padding: 10px 0 10px 10px;
-	width: auto;
-	min-height: 50px;
-	margin-bottom: 50px;
-	font-family:Monaco;
-	color: var(--textcolor);
-	font-size:25px;
-	background-color: var(--sidebarlogocolor);
-	display: flex;
-	align-items: center;
-}
-
-.vertical-line{
-	width: 1px;
-	background-color: white;
-	height: 50px;
-	display: inline-block;
-	margin: 0 15px 0 5px;
-}
-
-
-body {
-	background-color: var(--bodycolor);
-	margin: 0 0 0 0;
+body{
+    margin:0;
+    background-color: var(--mainBG);
 }
 
 main{
-	margin: 0;
-	padding: 0px 0 200px 200px;
-	background-color: var(--mainbgcolor);
+    padding: 20px 0px 20px 260px;
 }
 
-h1 {
-  font-family: Monaco;
-  font-size: 70px;
-  background-color: var(--h1bgcolor);
-  text-align:center;
-  color: var(--mainbgcolor);
-  padding: 50px;
-  margin: 0px 0 60px 0;
-  
+div.left_panel{
+    margin: 0;
+    padding: 30px;
+    background-color: var(--panelBG);
+    position: fixed;
+    width:160px;
+    height: 100%;
+    border-right: 5px solid rgb(212, 212, 212);
+}
+.left_panel p{
+    font-size: 21px;
+    transition-duration: 300ms;
+    padding: 15px 0px 15px 5px;
+    margin: 5px;
+    border-radius: var(--mainRadius);
+}
+.left_panel p:hover{
+    background-color: #cecece;
+}
+.left_panel p.selected{
+    background-color: #c2c2c2;
 }
 
-table, td, th{
-	text-align:center;
-	width: 50%;
-	border:2px solid;
-	border-collapse: collapse;
-	color: var(--textcolor);
-	border-color: var(--tablebordercolor);
-	
+.left_panel h2{
+    font-size: 25px;
+    margin-bottom: 40px;
 }
 
-td,th{
-	font-family:Monaco;
-	font-size:20px;
+a{
+    color: black;
+    text-decoration: none;
 }
 
-td:hover:not(.formtable):not(.imgtable){
-	background-color: var(--tdovercolor);
+object{
+    width: 900px;
+    height: 1000px;
+    display: block;
 }
 
-p,li, h3{
-	font-family:Monaco;
-	color: var(--textcolor);
-	font-size:20px;
-	text-align:center;
-	padding: 0 100px;
+h1{
+    font-size: 40px;
 }
 
-footer{
-	background-color: var(--footercolor);
-	padding-top: 10px;
-	padding-bottom: 10px;
-	margin-right: 0;
-	padding-right: 10px;
+.grid-container{
+    display: grid;
+    column-gap: 50px;
 }
 
-footer p{
-	padding: 0 30px;
+.pdf-container{
+    grid-column: 2 / span 3;
 }
 
-li {
-	margin-left: 30%;
-	text-align:left;
+.list-container{
+    min-width: 100px;
+    grid-column: 1 / span 1;
+    padding-top: 200px;
 }
 
-p.footer{
-	text-align: right;
+.pdf-list table{
+    background-color: #eeeeee;
+    border-radius: var(--mainRadius);
+    border-spacing: 0;
 }
 
-figcaption{
-	color: var(--textcolor);
-	font-size: 20px;
-	font-family:Monaco;	
+.pdf-list td, tr{
+    font-size: 22px;
+    border-bottom: 1px solid rgb(109, 109, 109);
+    padding: 13px;
+    width: 200px;
+    
 }
-
-.formtable{
-	border-collapse: separate;
-	text-align: left;
-	border: 0;
-	height: 100px;
-	width: 500px;
-	font-size: 16px;
-	border-spacing: 15px;
-}
-
-.formtable label{
-	padding-left:7px;
-}
-
-input[type=text], [type=email], [type=tel], [type=date]{
-	width:250px;
-	height:32px;
-	border: 0;
-	border-radius: 10px;
-	padding-left: 10px;
-}
-
-input[type=submit]{
-	color:black;
-	background-color:#BCED09;
-	width: 49%;
-	border: 0;
-	height: 40px;
-	border-radius: 10px;
-}
-
-input[type=reset]{
-	background-color:#FF715B;
-	width: 49%;
-	border: 0;
-	height: 40px;
-	border-radius: 10px;
-}
-
-input[type=submit]:hover, [type=reset]:hover{
-	cursor: pointer;
+.pdf-list tr:hover{
+    cursor: pointer;
+    background-color: #dadada;
+    transition: 300ms;
 }

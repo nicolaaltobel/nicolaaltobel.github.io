@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <script src="../scripts/javascript.js"></script>
+        <link rel="stylesheet" href="../style.css">
+        <title> Appunti quinta </title>
+    </head>
+
+    <body>
+        <div class="left_panel">
+            <h2>| Materie </h2>
+            
+            <a href="filosofia.html"><p>| Filosofia </p></a>
+            <a href="fisica.html"><p>| Fisica </p></a>
+            <a href="informatica.html"><p>| Informatica </p></a>
+            <a href="inglese.html"><p>| Inglese </p></a>
+            <a href="italiano.html"><p>| Italiano </p></a>
+            <a href="matematica.html"><p>| Matematica </p></a>
+            <a href="scienze.html"><p>| Scienze </p></a>
+            <p class="selected">| Storia </p>
+        </div>
+        <main>
+            <h1 align="center">
+                Storia
+            </h1>
+
+            <div class="grid-container">
+                <div class = "list-container">
+                    <div class="pdf-list" align="center"><table class="pdf-list">
+                        <tr>
+                            <td id="test" onclick="changePDF(this.id)"> test </td>
+                        </tr>   
+                        <tr>
+                            <td id="test2" onclick="changePDF(this.id)" style="border:0 "> test 2 </td>
+                        </tr>
+                    </table></div>
+                </div>
+
+                <div class="pdf-container">
+                    <object class="test" data="../documenti/storia/test.pdf" type="application/pdf"> test </object>
+                    <object class="test2" data="../documenti/storia/test2.pdf" type="application/pdf"> test2 </object>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>
