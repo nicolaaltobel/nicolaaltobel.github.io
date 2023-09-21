@@ -49,7 +49,7 @@ a{
 object{
     width: 900px;
     height: 1000px;
-    display: block;
+    display: none;
 }
 
 h1{
