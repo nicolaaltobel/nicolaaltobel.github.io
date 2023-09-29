@@ -1,10 +1,10 @@
 var lastPDFclass = "";
 
 function changePDF(pdfClass){
-    //alert(document.getElementsByClassName(pdfClass).style.height);
     if (lastPDFclass != ""){
-        document.getElementsByClassName(lastPDFclass)[0].style.display = "none";
+        document.getElementsByName(lastPDFclass)[0].display = "none";
     }
-    document.getElementsByClassName(pdfClass)[0].style.display= "block";
+    //document.getElementsByName(pdfClass)[0].display= "block";
+    document.getElementsByName(pdfClass)[0].style.display = "block";
     lastPDFclass = pdfClass;
 }
